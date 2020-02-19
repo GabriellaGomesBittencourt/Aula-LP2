@@ -27,7 +27,6 @@ public class Ex5 {
         System.out.print("Escolha uma opção: \n" 
                 + "U - Retorna última letra \n"
                 + "T - Substitui pelo novo caracter \n"
-                + "I - Retorna as iniciais \n"
                 + "S - Sair ");
         comando = le.nextLine();
         
@@ -45,6 +44,10 @@ public class Ex5 {
                 caracterNovo = le.nextLine();
                 TrocaLetra(texto, caracterAntigo, caracterNovo );
                 
+            }
+            else if("S".equals(comando.toUpperCase())){
+                System.out.println("Fim");
+                System.exit(0);
             }
         }
     }
